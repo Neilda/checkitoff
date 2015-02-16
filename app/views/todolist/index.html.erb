@@ -1,1 +1,8 @@
 <h1>What should you check off next?</h1>
+<% @todos.each do |todo| %>
+  <div>
+    <h1><%= todo.name %></h1><br />
+    <p><%= todo.description %></p><br />
+  </div>
+
+<% end %>
